@@ -133,3 +133,27 @@ uname - imprimirá información detallada sobre tu sistema Linux, como el nombre
 hostname - conocer el nombre de tu host/red, simplemente escribe hostname. Agregar un -I al final mostrará la dirección IP de tu red.
 
 df - obtener un informe sobre el uso del espacio en disco del sistema, que se muestra en porcentaje y KB. Si deseas ver el informe en megabytes, escribe df -m.
+
+|               Comando Docker                    |                                      Descripción                                                              |
+|       -----------------                         |                              ------------------                                                               |
+| @usuario:/home/usuario$ docker --version        | Encontrar la versión de Docker instalada.                                                                     |
+| @usuario:/home/usuario$ docker pull httpd       | Extraer la imagen de la ventana acoplable de Dockerhub.                                                       |
+| @usuario:/home/usuario$ docker images           | Todas las imágenes de la ventana acoplable extraídas en el sistema con detalles.                              |
+| @usuario:/home/ususario$ docker ps              | Enumera todos los contenedores Docker que se están ejecutando con los detalles del contenedor.                |
+| @usuario:/home/usuario$ docker ps -a            | Todos los contenedores de Docker que se ejecutan / salieron / detuvieron con los detalles del contenedor.     |
+| @usuario:/home/usuario$ docker rm "ID cont."    | Elimina el contenedor de la ventana acoplable con el ID del contenedor mencionado en el comando.              |
+| @usuario:/home/usuario$ docker restart "ID cont"| Reinicia el contenedor de la ventana acoplable con la identificación del contenedor.                          |
+| @usuario:/home/usuario$ docker stop "ID cont"   | Detenga un contenedor con el ID de contenedor.                                                                |
+| @usuario:/home/usuario$ docker start "ID cont"  | Inicia el contenedor de la ventana acoplable con la identificación del contenedor.                            |
+| @usuario:/home/usuario$ docker kill "ID cont"   | Detenga el contenedor Docker inmediatamente.                                                                  |
+| @usuario:/home/usuario$ docker commit "ID cont" | Guarde una nueva imagen de Docker con el ID de contenedor mencionado en el sistema local.                     |
+| @usuario:/home/usuario$ docker login            | Inicie sesión en Docker Hub. Se pedirán las credenciales de su Docker Hub para iniciar sesión.                |
+| @usuario:/home/usuario$ docker network ls       | Enumera los detalles de toda la red en el clúster.                                                            |
+| @usuario:/home/usuario$ docker info             | Información detallada sobre la ventana acoplable instalada en el sistema.                                     |
+| @usuario:/home/usuario$ docker history httpd    | Muestra el historial de una imagen de la ventana acoplable con el nombre de la imagen                         |
+| @usuario:/home/usuario$ docker search hadoop    | Busque una imagen de docker en dockerhub con el nombre mencionado en el comando.                              |
+| @usuario:/home/usuario$ docker update --help    | Actualiza las configuraciones de contenedores. Esto muestra todas las opciones de actualización.              |
+| @usuario:/home/usuario$ docker volume create    | Crea un volumen que el contenedor de la ventana acoplable utilizará para almacenar datos.                     |
+| @usuario:/home/usuario$ docker volume ls        |  Comando para ver si el volumen se creó o no.                                                                 |
+| ''    docker plugin install vieux/sshfs DEBUG=1 | Instale un complemento de docker vieux/sshfs con el entorno de depuración establecido en 1.                   |
+| @usuario:/home/usuario$ docker logout           |  Cerrar sesión en dockerhub.                                                                                  |
